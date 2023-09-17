@@ -1,0 +1,3 @@
+[submodule "vmas"]
+	path = vmas
+	url = git@github.com:KyleM73/VectorizedMultiAgentSimulator.git

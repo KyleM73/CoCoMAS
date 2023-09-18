@@ -38,6 +38,7 @@ The search problem may take on the following forms:
 - Multi Agent, Static Target -> see CONCERTS for optimal formulation
 - Multi Agent, Dynamic Target (random)
 - Multi Agent, Dynamic Target (adversarial)
+
 This work will explore the dynamic target setting for heterogenious multi agent teams.
 In the random case, the target performs a random walk over the graph of map-cover centroids. In the adversarial case, the target selects the node that has the largest minimum distance to one of the robots.
 

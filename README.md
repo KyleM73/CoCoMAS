@@ -42,6 +42,11 @@ The search problem may take on the following forms:
 This work will explore the dynamic target setting for heterogenious multi agent teams.
 In the random case, the target performs a random walk over the graph of map-cover centroids. In the adversarial case, the target performs a T-step min-max lookahead to select the node with the lowest probability of discovery.
 
+# Thesis:
+Agents in close proximity should work coopoeratively to search for dynamic targets. Agents on their own should default to naieve fronteir exploration. A decentralized agent should be able to mode switch continuously based on the density of agents near to them in the A* sense. Such a policy can be achieved at least three ways: 1) multiple discrete heuristic policies triggered by hardcoded density thresholds, 2) imitation learning from (1), or 3) an RL agent with behavioral rewards.
+
+This can be cast in the language of goal conditioned RL. Specifically, the goal is a desired behavioral mode, which the policy is conditioned on as a function of its proximity to other agents and local map conditions. The policy should output behaviors + communicate with nearby agents to coordinate the search for dynamic targets. 
+
 # Theory:
 ## Static Case:
 The probability of finding the target in a cell is: 
